@@ -1,0 +1,97 @@
+:root {
+  /* ---------- Color: brand ---------- */
+  --turquoise-1: #00c4b3;
+  --turquoise-2: #b3ede8;
+  --turquoise-3: #dbf0ee;
+  --turquoise-text: #009688;
+
+
+  /* ---------- Color: system ---------- */
+  --error-500: #ef7773;
+  --error-100: #fad6d5;
+  --warning-500: #ff8f4b;
+  --warning-100: #ffddc9;
+  --success-500: #8ad866;
+  --success-100: #dcf3d1;
+
+  /* ---------- Color: grays ---------- */
+  --black: #000000;
+  --gray-400: #c4c4c4;
+  --gray-200: #f1f1f1;
+  --gray-100: #f6f6f6;
+  --white: #ffffff;
+  --gray-600: #7c7c7c;
+  --gray-700: #686868;
+  --turquoise-gray-1: #355956;
+  --turquoise-gray-2: #3f6866;
+  --turquoise-gray-3: #528984;
+  --turquoise-gray-4: #79ada9;
+
+  /* ---------- Color: roles ---------- */
+  --color-text: var(--black);
+  --color-text-muted: var(--turquoise-gray-2);
+  --color-link: var(--turquoise-gray-1);
+  --color-surface: var(--white);
+  --color-page-flat: var(--gray-100);
+  --color-border: var(--gray-400);
+  --color-input-border: var(--gray-600);
+  --color-header: var(--turquoise-1);
+  --color-accent: var(--turquoise-1);
+  --color-accent-soft: var(--turquoise-3);
+  --color-accent-strong: var(--turquoise-text);
+  --color-focus: var(--turquoise-gray-1);
+  --color-error-bg: var(--error-100);
+  --color-error-edge: var(--error-500);
+
+  /* Buttons */
+  --btn-primary-bg: var(--turquoise-1);
+  --btn-primary-bg-hover: var(--turquoise-text);
+  --btn-primary-text: var(--black);
+
+  /* Page background gradient ("Turquoise Gradient 01") */
+  --gradient-page: linear-gradient(180deg, var(--turquoise-3) 0%, var(--white) 100%);
+
+  /* ---------- Typography ---------- */
+  --font: "Gotham Rounded", sans-serif;
+  --weight-book: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --type-h1: var(--weight-bold) 36px/40px var(--font);
+  --type-h2: var(--weight-book) 36px/36px var(--font);
+  --type-h3: var(--weight-medium) 24px/30px var(--font);
+  --type-h4: var(--weight-medium) 20px/24px var(--font);
+  --type-subheader-1: var(--weight-medium) 14px/20px var(--font);
+  --type-subheader-2: var(--weight-book) 14px/20px var(--font);
+  --type-title-1: var(--weight-medium) 20px/24px var(--font);
+  --type-title-2: var(--weight-medium) 18px/22px var(--font);
+  --type-title-3: var(--weight-medium) 16px/20px var(--font);
+  --type-body-1: var(--weight-book) 16px/20px var(--font);
+  --type-body-2: var(--weight-medium) 14px/24px var(--font);
+  --type-body-3: var(--weight-book) 14px/24px var(--font);
+  --type-body-4: var(--weight-medium) 12px/16px var(--font);
+  --type-body-5: var(--weight-book) 12px/16px var(--font);
+  --type-button-large: var(--weight-medium) 20px/24px var(--font);
+  --type-button-small: var(--weight-medium) 16px/16px var(--font);
+  --type-button-underline: var(--weight-book) 16px/16px var(--font);
+  --type-button-underline-sm: var(--weight-book) 14px/14px var(--font);
+  --type-button-underline-xs: var(--weight-book) 12px/12px var(--font);
+  --type-small: var(--weight-medium) 9px/10px var(--font);
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* ---------- Shape ---------- */
+  --radius-card: 20px;
+  --radius-input: 8px;
+  --radius-pill: 999px;
+  --shadow-card: 0 8px 28px rgba(0, 196, 179, 0.16), 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  --nav-height: 64px;
+  --tap: 44px;   /* minimum touch target */
+}

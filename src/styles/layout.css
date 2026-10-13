@@ -1,0 +1,77 @@
+/* ---------- Header + navigation ---------- */
+.app-header { background: var(--color-header); }
+.app-header__inner {
+  max-width: 1100px; margin: 0 auto;
+  min-height: 64px; padding: 0 var(--space-5);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+}
+
+.logo {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+
+.nav ul { display: flex; }
+.nav-link {
+  display: flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: var(--tap); padding: 0 var(--space-4);
+  background: none; border: 0; border-radius: var(--radius-pill);
+  font: var(--type-button-small); color: var(--color-text);
+}
+.nav-link svg { width: 24px; height: 24px; flex: none; }
+.nav-link[aria-current="page"] { background: var(--white); color: var(--color-link); }
+
+/* Wide: links in the top bar */
+.nav--top ul { gap: var(--space-2); }
+.nav--bottom { display: none; }
+
+/* Phones: header keeps only the logo, links become a bottom tab bar */
+@media (max-width: 719px) {
+  .app-header__inner { min-height: 56px; padding: 0 var(--space-4); }
+  .nav--top { display: none; }
+  .nav--bottom {
+    display: block;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    background: var(--white); border-top: 1px solid var(--color-border);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .nav--bottom ul { justify-content: space-around; }
+  .nav--bottom li { flex: 1; }
+  .nav--bottom .nav-link {
+    width: 100%; height: var(--nav-height);
+    flex-direction: column; gap: 2px; border-radius: 0;
+    font: var(--type-body-4); color: var(--color-text-muted);
+  }
+  .nav--bottom .nav-link[aria-current="page"] { background: none; color: var(--color-link); box-shadow: inset 0 3px 0 var(--color-accent); }
+  .app-main { padding-bottom: calc(var(--nav-height) + env(safe-area-inset-bottom)); }
+}
+
+/* ---------- Page structure ---------- */
+.page { max-width: 1100px; margin: 0 auto; padding: var(--space-5) var(--space-4) var(--space-6); }
+.page--narrow { max-width: 600px; }
+@media (min-width: 720px) {
+  .page { padding: var(--space-6) var(--space-5); }
+}
+
+.page-title { margin-bottom: var(--space-4); }
+.page-title h1 { font: var(--type-h3); }
+.page-title p { font: var(--type-body-3); color: var(--color-text-muted); }
+@media (min-width: 900px) {
+  .page-title h1 { font: var(--type-h1); } /* H1 (36px bold) only where there is room */
+}
+
+/* Track page, wide: emotions left, reflections right (Figma desktop) */
+.track-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: var(--space-5); align-items: start; margin-top: var(--space-5); }
+
+/* Calendar page: stacked on phone/tablet, side by side on desktop */
+.calendar-layout { display: grid; gap: var(--space-5); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) {
+  .calendar-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }
+}
+@media (min-width: 720px) and (max-width: 899px) {
+  .calendar-layout { max-width: 640px; margin: 0 auto; }
+}
+
+.banner { margin: 0; padding: var(--space-3) var(--space-5); font: var(--type-body-2); }
+.banner--error { background: var(--color-error-bg); color: var(--color-text); border-bottom: 3px solid var(--color-error-edge); }

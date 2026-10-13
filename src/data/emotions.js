@@ -1,0 +1,85 @@
+export const emotions = [
+  {
+    id: "happy",
+    label: "Happy",
+    secondary: [
+      { id: "playful", label: "Playful", tertiary: ["Aroused", "Cheeky"] },
+      { id: "content", label: "Content", tertiary: ["Free", "Joyful"] },
+      { id: "interested", label: "Interested", tertiary: ["Curious", "Inquisitive"] },
+      { id: "proud", label: "Proud", tertiary: ["Successful", "Confident"] },
+      { id: "accepted", label: "Accepted", tertiary: ["Respected", "Valued"] },
+      { id: "powerful", label: "Powerful", tertiary: ["Courageous", "Creative"] },
+      { id: "peaceful", label: "Peaceful", tertiary: ["Loving", "Thankful"] },
+      { id: "trusting", label: "Trusting", tertiary: ["Sensitive", "Intimate"] },
+      { id: "optimistic", label: "Optimistic", tertiary: ["Hopeful", "Inspired"] },
+    ],
+  },
+  {
+    id: "surprised",
+    label: "Surprised",
+    secondary: [
+      { id: "excited", label: "Excited", tertiary: ["Eager", "Energetic"] },
+      { id: "amazed", label: "Amazed", tertiary: ["Awe", "Astonished"] },
+      { id: "confused", label: "Confused", tertiary: ["Perplexed", "Disillusioned"] },
+      { id: "startled", label: "Startled", tertiary: ["Dismayed", "Shocked"] },
+    ],
+  },
+  {
+    id: "bad",
+    label: "Bad",
+    secondary: [
+      { id: "bored", label: "Bored", tertiary: ["Indifferent", "Apathetic"] },
+      { id: "busy", label: "Busy", tertiary: ["Pressured", "Rushed"] },
+      { id: "stressed", label: "Stressed", tertiary: ["Overwhelmed", "Out of control"] },
+      { id: "tired", label: "Tired", tertiary: ["Sleepy", "Unfocused"] },
+    ],
+  },
+  {
+    id: "fearful",
+    label: "Fearful",
+    secondary: [
+      { id: "scared", label: "Scared", tertiary: ["Helpless", "Frightened"] },
+      { id: "anxious", label: "Anxious", tertiary: ["Overwhelmed", "Worried"] },
+      { id: "insecure", label: "Insecure", tertiary: ["Inadequate", "Inferior"] },
+      { id: "weak", label: "Weak", tertiary: ["Worthless", "Insignificant"] },
+      { id: "rejected", label: "Rejected", tertiary: ["Excluded", "Persecuted"] },
+      { id: "threatened", label: "Threatened", tertiary: ["Nervous", "Exposed"] },
+    ],
+  },
+  {
+    id: "angry",
+    label: "Angry",
+    secondary: [
+      { id: "let-down", label: "Let down", tertiary: ["Betrayed", "Resentful"] },
+      { id: "humiliated", label: "Humiliated", tertiary: ["Disrespected", "Ridiculed"] },
+      { id: "bitter", label: "Bitter", tertiary: ["Indignant", "Violated"] },
+      { id: "mad", label: "Mad", tertiary: ["Furious", "Jealous"] },
+      { id: "aggressive", label: "Aggressive", tertiary: ["Provoked", "Hostile"] },
+      { id: "frustrated", label: "Frustrated", tertiary: ["Infuriated", "Annoyed"] },
+    ],
+  },
+  {
+    id: "disgusted",
+    label: "Disgusted",
+    secondary: [
+      { id: "critical", label: "Critical", tertiary: ["Skeptical", "Dismissive"] },
+      { id: "distant", label: "Distant", tertiary: ["Withdrawn", "Numb"] },
+      { id: "disapproving", label: "Disapproving", tertiary: ["Judgmental", "Embarrassed"] },
+      { id: "disappointed", label: "Disappointed", tertiary: ["Appalled", "Revolted"] },
+      { id: "awful", label: "Awful", tertiary: ["Nauseated", "Detestable"] },
+      { id: "repelled", label: "Repelled", tertiary: ["Horrified", "Hesitant"] },
+    ],
+  },
+  {
+    id: "sad",
+    label: "Sad",
+    secondary: [
+      { id: "hurt", label: "Hurt", tertiary: ["Embarrassed", "Disappointed"] },
+      { id: "depressed", label: "Depressed", tertiary: ["Inferior", "Empty"] },
+      { id: "guilty", label: "Guilty", tertiary: ["Remorseful", "Ashamed"] },
+      { id: "despair", label: "Despair", tertiary: ["Powerless", "Grief"] },
+      { id: "vulnerable", label: "Vulnerable", tertiary: ["Fragile", "Victimised"] },
+      { id: "lonely", label: "Lonely", tertiary: ["Abandoned", "Isolated"] },
+    ],
+  },
+];
