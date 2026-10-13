@@ -1,39 +1,76 @@
-# Mood tracker
+# Mood Tracker
 
-React + Vite + plain CSS. No backend; entries live in `localStorage`.
+A responsive mood-tracking web application designed to help users identify their emotions, reflect on their feelings, and build self-awareness.
 
-## Run it
+**[Live Demo](https://aritatgml.github.io/mood-tracker/)** · **[Figma Design](https://www.figma.com/design/P6NTSzUDwfEtP0r28asMvI/Ooca-Assignment?node-id=30-2599)**
+
+## Overview
+
+This project explores a more approachable way to understand emotions through guided emotion selection and structured reflection. Instead of requiring users to identify exactly how they feel right away, the experience guides them through increasingly specific emotion choices and reflection prompts.
+
+## Features
+
+- **Guided emotion selection:** Choose primary, secondary, and tertiary emotions.
+- **Structured reflection:** Record thoughts, needs, and bodily sensations or actions.
+- **Mood history:** Review and navigate past entries.
+- **Responsive interface:** Designed to adapt to different screen sizes.
+- **Local data storage:** Mood entries are saved in the browser using `localStorage`.
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+- Browser `localStorage`
+
+## Getting Started
+
+### Prerequisites
+
+Install [Node.js](https://nodejs.org/) and npm.
+
+### Installation
+
+Clone the repository and install dependencies:
+
 ```bash
+git clone https://github.com/aritatgml/mood-tracker.git
+cd mood-tracker
 npm install
-npm run dev          # http://localhost:5173
-npm run build        # production build into dist/
-npm run test:utils   # unit tests for date/entry/storage helpers (no browser needed)
 ```
 
-## Where things live
-```
-src/
-  data/        emotions.js (emotion names) · emotionThemes.js (emotion colors)
-               reflectionQuestions.js
-  utils/       dateUtils.js (local-date helpers) · entryUtils.js (entry shape, validation)
-               storage.js (safe localStorage read/write) · *.test.js
-  hooks/       useMoodEntries.js (single source of truth: add/update/delete + persistence)
-               useMoodDraft.js (the entry being written; reset rules) · useMediaQuery.js
-  components/  ui/ (Button, Chip, Cloud, Dialog, TextAreaField, Logo)
-               mood/ (EmotionPicker, ReflectionFields, EntryReview, EntryCard, EntryDetail …)
-               calendar/ (CalendarGrid, DayEntries, WeekStrip) · layout/ (AppHeader, Navigation)
-  pages/       TrackPage.jsx · CalendarPage.jsx
-  styles/      tokens.css (colors + type scale from the style guide) · fonts.css (@font-face)
-               base.css · layout.css · components.css
+### Run locally
+
+```bash
+npm run dev
 ```
 
-## Entry shape
-```js
-{ id, createdAt: "ISO timestamp", date: "YYYY-MM-DD" /* local day */,
-  emotions: { primary, secondary, tertiary }, answers: { thoughts, needs, body } }
-```
-Stored under the key `mood.entries.v1`.
+### Build for production
 
-## Changing the style
-Colors and text styles live in `src/styles/tokens.css`. Use a text style with `font: var(--type-title-1);`
-and a color with `color: var(--color-link);`.
+```bash
+npm run build
+```
+
+### Run utility tests
+
+```bash
+npm run test:utils
+```
+
+## Data Storage
+
+This application does not use a backend database. Mood entries are stored locally in the browser, so they are not automatically synchronized across devices.
+
+## Project Structure
+
+- `src/data/` — Emotion data, emotion themes, and reflection questions
+- `src/utils/` — Date, entry, and storage utilities
+- `src/hooks/` — Mood entry management and related hooks
+- `src/components/` — Reusable UI, mood-tracking, calendar, and layout components
+- `src/pages/` — Main application pages
+- `src/styles/` — Design tokens, typography, and component styles
+
+## Design
+
+The interface follows the provided OOCA style guide, with design decisions focused on making emotion selection and reflection approachable and easy to follow.
